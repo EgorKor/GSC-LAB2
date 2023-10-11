@@ -30,3 +30,19 @@ C:\Users\Егор\Desktop\ВУЗ\5 семестр\ГСК\лабы\лаба 2\GSC
 C:\Users\Егор\Desktop\ВУЗ\5 семестр\ГСК\лабы\лаба 2\GSC_LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.pdb
 C:\Users\Егор\Desktop\ВУЗ\5 семестр\ГСК\лабы\лаба 2\GSC_LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.genruntimeconfig.cache
 C:\Users\Егор\Desktop\ВУЗ\5 семестр\ГСК\лабы\лаба 2\GSC_LAB2\GSC_LAB2\obj\Debug\net6.0-windows\ref\GSC_LAB2.dll
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\bin\Debug\net6.0-windows\GSC_LAB2.exe
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\bin\Debug\net6.0-windows\GSC_LAB2.deps.json
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\bin\Debug\net6.0-windows\GSC_LAB2.runtimeconfig.json
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\bin\Debug\net6.0-windows\GSC_LAB2.dll
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\bin\Debug\net6.0-windows\GSC_LAB2.pdb
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.Form1.resources
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.csproj.GenerateResource.cache
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.AssemblyInfoInputs.cache
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.AssemblyInfo.cs
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.csproj.CoreCompileInputs.cache
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.dll
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\refint\GSC_LAB2.dll
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.pdb
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\GSC_LAB2.genruntimeconfig.cache
+C:\Users\Егор\Desktop\Программная инженерия\Семестр 5\Графические системы компьютеров\лабы\Лаба 2\GSC-LAB2\GSC_LAB2\obj\Debug\net6.0-windows\ref\GSC_LAB2.dll
