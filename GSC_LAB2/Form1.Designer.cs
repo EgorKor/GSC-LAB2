@@ -27,8 +27,7 @@
             pictureBox1 = new PictureBox();
             button1 = new Button();
             colorComboBox = new ComboBox();
-            visualModeComboBox = new ComboBox();
-            algoritmChoseComboBox = new ComboBox();
+            tsoComboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -63,37 +62,24 @@
             colorComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             colorComboBox.FormattingEnabled = true;
             colorComboBox.Items.AddRange(new object[] { "Зелёный", "Красный", "Жёлтый", "Синий" });
-            colorComboBox.Location = new Point(24, 396);
+            colorComboBox.Location = new Point(21, 391);
             colorComboBox.Name = "colorComboBox";
             colorComboBox.Size = new Size(257, 38);
             colorComboBox.TabIndex = 2;
             colorComboBox.SelectedIndexChanged += colorComboBox_SelectedIndexChanged;
             // 
-            // visualModeComboBox
+            // tsoComboBox
             // 
-            visualModeComboBox.Anchor = AnchorStyles.Bottom;
-            visualModeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            visualModeComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            visualModeComboBox.FormattingEnabled = true;
-            visualModeComboBox.Items.AddRange(new object[] { "с граничным многоугольником", "без граничного многоугольника" });
-            visualModeComboBox.Location = new Point(294, 396);
-            visualModeComboBox.Name = "visualModeComboBox";
-            visualModeComboBox.Size = new Size(391, 38);
-            visualModeComboBox.TabIndex = 3;
-            visualModeComboBox.SelectedIndexChanged += visualModeComboBox_SelectedIndexChanged;
-            // 
-            // algoritmChoseComboBox
-            // 
-            algoritmChoseComboBox.Anchor = AnchorStyles.Bottom;
-            algoritmChoseComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            algoritmChoseComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            algoritmChoseComboBox.FormattingEnabled = true;
-            algoritmChoseComboBox.Items.AddRange(new object[] { "Для ориентированного многоугольника", "Для неориентированного многоугольника" });
-            algoritmChoseComboBox.Location = new Point(24, 352);
-            algoritmChoseComboBox.Name = "algoritmChoseComboBox";
-            algoritmChoseComboBox.Size = new Size(661, 38);
-            algoritmChoseComboBox.TabIndex = 4;
-            algoritmChoseComboBox.SelectedIndexChanged += algoritmChoseComboBox_SelectedIndexChanged;
+            tsoComboBox.Anchor = AnchorStyles.Bottom;
+            tsoComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            tsoComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            tsoComboBox.FormattingEnabled = true;
+            tsoComboBox.Items.AddRange(new object[] { "ТМО - Объединение", "ТМО - Пересечение", "ТМО - Симметричная разность", "ТМО - Разность A/B", "ТМО - Разность B/A" });
+            tsoComboBox.Location = new Point(307, 391);
+            tsoComboBox.Name = "tsoComboBox";
+            tsoComboBox.Size = new Size(355, 38);
+            tsoComboBox.TabIndex = 3;
+            tsoComboBox.SelectedIndexChanged += tsoComboBox_SelectedIndexChanged;
             // 
             // Form1
             // 
@@ -101,8 +87,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1015, 461);
-            Controls.Add(algoritmChoseComboBox);
-            Controls.Add(visualModeComboBox);
+            Controls.Add(tsoComboBox);
             Controls.Add(colorComboBox);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
@@ -119,7 +104,6 @@
         private PictureBox pictureBox1;
         private Button button1;
         private ComboBox colorComboBox;
-        private ComboBox visualModeComboBox;
-        private ComboBox algoritmChoseComboBox;
+        private ComboBox tsoComboBox;
     }
 }
