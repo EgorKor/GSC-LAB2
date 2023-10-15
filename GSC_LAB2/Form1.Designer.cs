@@ -47,8 +47,8 @@
             // 
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button1.BackColor = SystemColors.Control;
-            button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            button1.Location = new Point(848, 396);
+            button1.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(848, 391);
             button1.Name = "button1";
             button1.Size = new Size(155, 46);
             button1.TabIndex = 1;
@@ -59,40 +59,40 @@
             // colorComboBox
             // 
             colorComboBox.Anchor = AnchorStyles.Bottom;
-            colorComboBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            colorComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            colorComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             colorComboBox.FormattingEnabled = true;
             colorComboBox.Items.AddRange(new object[] { "Зелёный", "Красный", "Жёлтый", "Синий" });
             colorComboBox.Location = new Point(24, 396);
             colorComboBox.Name = "colorComboBox";
-            colorComboBox.Size = new Size(243, 38);
+            colorComboBox.Size = new Size(257, 38);
             colorComboBox.TabIndex = 2;
-            colorComboBox.Text = "Цвет закрашивания";
             colorComboBox.SelectedIndexChanged += colorComboBox_SelectedIndexChanged;
             // 
             // visualModeComboBox
             // 
             visualModeComboBox.Anchor = AnchorStyles.Bottom;
-            visualModeComboBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            visualModeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            visualModeComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             visualModeComboBox.FormattingEnabled = true;
             visualModeComboBox.Items.AddRange(new object[] { "с граничным многоугольником", "без граничного многоугольника" });
             visualModeComboBox.Location = new Point(294, 396);
             visualModeComboBox.Name = "visualModeComboBox";
             visualModeComboBox.Size = new Size(391, 38);
             visualModeComboBox.TabIndex = 3;
-            visualModeComboBox.Text = "Режим визуализации";
             visualModeComboBox.SelectedIndexChanged += visualModeComboBox_SelectedIndexChanged;
             // 
             // algoritmChoseComboBox
             // 
             algoritmChoseComboBox.Anchor = AnchorStyles.Bottom;
-            algoritmChoseComboBox.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            algoritmChoseComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            algoritmChoseComboBox.Font = new Font("Segoe UI Semilight", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             algoritmChoseComboBox.FormattingEnabled = true;
             algoritmChoseComboBox.Items.AddRange(new object[] { "Для ориентированного многоугольника", "Для неориентированного многоугольника" });
             algoritmChoseComboBox.Location = new Point(24, 352);
             algoritmChoseComboBox.Name = "algoritmChoseComboBox";
             algoritmChoseComboBox.Size = new Size(661, 38);
             algoritmChoseComboBox.TabIndex = 4;
-            algoritmChoseComboBox.Text = "Алгоритм закрашивания";
             algoritmChoseComboBox.SelectedIndexChanged += algoritmChoseComboBox_SelectedIndexChanged;
             // 
             // Form1

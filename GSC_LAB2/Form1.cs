@@ -14,7 +14,13 @@
         private int visualMode;
         private const int BORDER_MODE = 0;
         private const int NON_BORDER_MODE = 1;
-         
+
+        private const int UNION_CODE = 0;
+        private const int INTERSECTION_CODE = 1;
+        private const int SYMMETRIC_DIFFERENCE_CODE = 2;
+        private const int AB_DIFFERENCE_CODE = 3;
+        private const int BA_DIFFERENCE_CODE = 4;
+
 
         public Form1()
         {
@@ -25,10 +31,13 @@
             pointList = new List<Point>();
             drawBorderPen = new Pen(Color.Black, 1);
             paintingPen = new Pen(Color.Green, 1);
+            algoritmChoseComboBox.SelectedIndex = 0;
+            colorComboBox.SelectedIndex = 0;
+            visualModeComboBox.SelectedIndex = 0;
         }
 
         private void paint_with__non_oriented_algoritm()
-        { 
+        {
             int Ymin = pointList.Min(point => point.Y);
             int Ymax = pointList.Max(point => point.Y);
             Ymin = Math.Max(Ymin, 0);
@@ -37,7 +46,7 @@
             for (int Y = Ymin; Y <= Ymax; Y++)
             {
                 Xb.Clear();
-                for(int i = 0; i < pointCounter; i++)
+                for (int i = 0; i < pointCounter; i++)
                 {
                     int k;
                     if (i < pointCounter - 1)
@@ -45,9 +54,9 @@
                     else
                         k = 0;
 
-                   if ((pointList.ElementAt(i).Y < Y && pointList.ElementAt(k).Y >= Y)
-                        || 
-                        (pointList.ElementAt(i).Y >= Y && pointList.ElementAt(k).Y < Y))
+                    if ((pointList.ElementAt(i).Y < Y && pointList.ElementAt(k).Y >= Y)
+                         ||
+                         (pointList.ElementAt(i).Y >= Y && pointList.ElementAt(k).Y < Y))
                     {
                         Xb.Add(calculateXonY(pointList.ElementAt(i), pointList.ElementAt(k), Y));
                     }
@@ -58,28 +67,28 @@
                     graphics.DrawLine(paintingPen, new Point(Xb.ElementAt(j), Y), new Point(Xb.ElementAt(j + 1), Y));
                 }
             }
-        } 
-        
+        }
+
         private int calculateXonY(Point pt1, Point pt2, int y)
         {
-            return (((y - pt1.Y) * (pt2.X - pt1.X))) / (pt2.Y - pt1.Y) + pt1.X;
+            return (y - pt1.Y) * (pt2.X - pt1.X) / (pt2.Y - pt1.Y) + pt1.X;
         }
 
         private void paint_with_oriented_algoritm()
         {
-           
+
             int Ymin = pointList.ElementAt(0).Y;
             int Ymax = pointList.ElementAt(0).Y;
             int j = 0;
-            for(int i = 0; i < pointList.Count; i++)
+            for (int i = 0; i < pointList.Count; i++)
             {
-                if(pointList.ElementAt(i).Y > Ymax)
+                if (pointList.ElementAt(i).Y > Ymax)
                 {
                     Ymax = pointList.ElementAt(i).Y;
                     j = i;
                 }
-                if(pointList.ElementAt(i).Y < Ymin)
-                        Ymin = pointList.ElementAt(i).Y;
+                if (pointList.ElementAt(i).Y < Ymin)
+                    Ymin = pointList.ElementAt(i).Y;
             }
             Ymin = Math.Max(0, Ymin);
             Ymax = Math.Min(Ymax, pictureBox1.Height - 1);
@@ -92,18 +101,18 @@
             bool CW = S < 0 ? true : false;
             if (CW)
             {
-                for(int Y = 0; Y < Ymin; Y++)
+                for (int Y = 0; Y < Ymin; Y++)
                 {
                     graphics.DrawLine(paintingPen, new Point(0, Y), new Point(pictureBox1.Width - 1, Y));
                 }
             }
             List<int> Xl = new List<int>();
             List<int> Xr = new List<int>();
-            for(int Y = Ymin; Y <= Ymax; Y++)
+            for (int Y = Ymin; Y <= Ymax; Y++)
             {
                 Xl.Clear();
                 Xr.Clear();
-                for(int i = 0; i < pointCounter; i++)
+                for (int i = 0; i < pointCounter; i++)
                 {
                     int k;
                     if (i < pointCounter - 1)
@@ -119,7 +128,7 @@
                             Xr.Add(X);
                         else
                             Xl.Add(X);
-                    }   
+                    }
                 }
                 if (CW)
                 {
@@ -128,11 +137,11 @@
                 }
                 Xl.Sort();
                 Xr.Sort();
-                for(int i = 0; i < Xl.Count; i++)
+                for (int i = 0; i < Xl.Count; i++)
                 {
-                    if(Xl.ElementAt(i) < Xr.ElementAt(i))
+                    if (Xl.ElementAt(i) < Xr.ElementAt(i))
                     {
-                        graphics.DrawLine(paintingPen, new Point(Xl.ElementAt(i), Y), new Point(Xr.ElementAt(i),Y));
+                        graphics.DrawLine(paintingPen, new Point(Xl.ElementAt(i), Y), new Point(Xr.ElementAt(i), Y));
                     }
                 }
             }
@@ -173,7 +182,7 @@
             {
                 if (pointCounter > 2)
                 {
-                    if(visualMode == BORDER_MODE)
+                    if (visualMode == BORDER_MODE)
                         graphics.DrawLine(drawBorderPen, pointList.ElementAt(0), pointList.ElementAt(pointCounter - 1));
                     switch (algoritmCode)
                     {
@@ -228,13 +237,17 @@
         {
             switch (colorComboBox.SelectedIndex)
             {
-                case 0: paintingPen.Color = Color.Green;
+                case 0:
+                    paintingPen.Color = Color.Green;
                     break;
-                case 1: paintingPen.Color = Color.Red;
+                case 1:
+                    paintingPen.Color = Color.Red;
                     break;
-                case 2: paintingPen.Color = Color.Yellow;
+                case 2:
+                    paintingPen.Color = Color.Yellow;
                     break;
-                case 3: paintingPen.Color = Color.Blue;
+                case 3:
+                    paintingPen.Color = Color.Blue;
                     break;
             }
         }
